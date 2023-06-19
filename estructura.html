@@ -6,20 +6,17 @@
     <link rel="stylesheet" href="diseño.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cajero automatico</title>
-</head>
-<body>
-    <h1>Cajero</h1>
-    <form action="">
-        <label for="exampleDataList" class="form-label">Perfil  </label>
-<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-<datalist id="datalistOptions">
-    <option value="Mai">
-    <option value="Gera">
-    <option value="Maui">
-</datalist>
+    </head>
+    <body>
+    <h1> Cajero Automatico </h1>
+    <form id="botones">
+        <select class="form-select" aria-label="Default select example">
+            <option class="boton" selected> seleccione su cuenta</option>
+            <option class="boton"value="1">Mali</option>
+            <option class="boton" value="2">Maui</option>
+            <option class="boton" value="3">Gera</option>
+        </select>
+    <button id="inicio" type="submit" >Iniciar</button>
     </form>
-    <script>
-        alert ("Bienvenido querido cliente")
-    </script>
 </body>
 </html>
