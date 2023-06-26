@@ -9,7 +9,6 @@ var cuentasDePersonas=[
 
 const select= document.querySelector('select')
 cuentasDePersonas.forEach((cuenta) => {
-    console.log((cuenta));
     let option=document.createElement('option');
     option.value = cuenta.id;
     option.innerText=cuenta.nombre;
@@ -17,30 +16,54 @@ cuentasDePersonas.forEach((cuenta) => {
     console.log(option);
 });
 
-//función única para la validación del PIN//
+
+//función única para la validación del PIN//   
+let selected= [];    
+const wrapper = document.querySelector('#wrapper')
 const body= document.querySelector('body')
 const validatePIN=(id,pin)=>{
-    let selected= cuentasDePersonas.filter(
+    selected= cuentasDePersonas.filter(
         (cuenta)=>{
             return cuenta.id===parseInt(id)
-            console.log(pin);
-        }
-    );
+        });
     if(selected[0].pin === pin) {
-        alert('Bienvenido');
-        window.location.href='http://127.0.0.1:5501/Cajero_Automatico/segundapantalla/Principal.html'
+        alert('Bienvenido');  
+        wrapper.innerHTML="";
+        renderMenu( )
     }else{
         alert('intente de nuevo');
     }
 };
+
 //al dar 'sumbit'se debe ingresar un PIN //
 
 var formulario = document.querySelector('form')
 formulario.addEventListener('submit', (event)=> {
     event.preventDefault()
-    let user_id= event.target["cuenta"].value;
+    let user_id = event.target["cuenta"].value;
     let pin = prompt ("Ingrese su pin");
-    event.preventDefault()
-    console.log(event.target[0].value);
     validatePIN(user_id, pin);
 })
+//se crea parte del contenido de la sengunda pagina (va después de validar el pin )//
+const  renderMenu = ()=>{
+    let menu = `
+    <div>
+        <h1>Bienvenid@ ${selected[0].nombre}</h1>
+        <div>
+            <a class="botMenu" href="#" role="button">Consultar </a>
+        </div>
+        <div>
+            <a class="botMenu" href="#" role="button">Depositar </a>
+        </div>
+        <div>
+            <a class="botMenu" href="#" role="button">Retirar </a>
+        </div>
+        <div>
+            <a class="botMenu" href="#" role="button">Salir </a>
+        </div>
+    </div>
+    `
+    wrapper.innerHTML= menu
+
+};
+

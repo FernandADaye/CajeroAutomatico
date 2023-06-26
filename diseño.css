@@ -4,9 +4,12 @@
 }
 h1{
     font-size: 69px;
+    display: flex;
     color:aliceblue;
     margin-bottom: 10px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 body{
     background-color: rgb(46, 46, 46);
@@ -23,12 +26,12 @@ body{
     border-radius: 30px;
     padding-bottom:10px;
     padding-top:10px;
-    padding-left:150px;
-    padding-right:150px;
+    padding-left:250px;
+    padding-right:250px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(43, 43, 43);
     color:aliceblue;
     border: 1px solid;
     transition-duration: 1000ms;
@@ -48,9 +51,29 @@ body{
     margin-top: 10px;
     padding-bottom:10px;
     padding-top:10px;
-    padding-left:100px;
-    padding-right:100px;
+    padding-left:150px;
+    padding-right:150px;
     width: 100%;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(43, 43, 43);
     color:aliceblue
+}
+.botMenu{
+    border: 1px solid;
+    display: flex;
+    font-size: large;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: none;
+    margin-top: 30px;
+    text-decoration: none;   
+    padding-bottom:10px;
+    padding-top:10px;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(43, 43, 43);
+    color:aliceblue
+    
 }
