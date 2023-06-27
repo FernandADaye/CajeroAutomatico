@@ -75,5 +75,56 @@ body{
     flex-direction: row;
     background-color: rgb(43, 43, 43);
     color:aliceblue
-    
 }
+.fuente{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: solid rgb(43, 43, 43);
+}
+.bott-r{
+    border: 1px solid;
+    display: flex;
+    font-size: large;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: none;
+    margin-top: 30px;
+    text-decoration: none;   
+    padding-bottom:10px;
+    flex-direction: row;
+    height: 10%;
+    width: 30%;
+    flex-direction: row;
+    background-color: rgb(43, 43, 43);
+    color:aliceblue
+}
+
+.data{
+    border: 1px solid;
+    display: flex;
+    font-size: large;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: none;
+    margin-top: 20px;
+    text-decoration: none;   
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    flex-direction: row;
+    background-color: rgb(43, 43, 43);
+    color:aliceblue
+}
+
+
+
+

@@ -1,9 +1,9 @@
 //aquí están todos los datos sobre los usuarios //
 
 var cuentasDePersonas=[
-    { id: 1, nombre:"Mai", saldo:"200", pin:"123"},
-    { id: 2, nombre: "Gera", saldo:"290", pin:"231"},
-    { id: 3, nombre: "Maui", saldo:"67", pin:"321"}
+    { id: 1, nombre:"Mai", saldo:"200", pin:"123", tarjeta:"58 38 59 424"},
+    { id: 2, nombre: "Gera", saldo:"290", pin:"231", tarjeta:"23 97 34 322"},
+    { id: 3, nombre: "Maui", saldo:"67", pin:"321",tajeta:"90 54 11 845"}
 ]
 //en esta sección están las opciones de usuarios basada desde JS //
 
@@ -50,7 +50,7 @@ const  renderMenu = ()=>{
     <div>
         <h1>Bienvenid@ ${selected[0].nombre}</h1>
         <div>
-            <a class="botMenu" href="#" role="button">Consultar </a>
+            <a class="botMenu" href="#" onclick="consultar()" role="button"> Consultar </a>
         </div>
         <div>
             <a class="botMenu" href="#" role="button">Depositar </a>
@@ -64,6 +64,6 @@ const  renderMenu = ()=>{
     </div>
     `
     wrapper.innerHTML= menu
-
 };
+const action= document.querySelector('#actions')
 
