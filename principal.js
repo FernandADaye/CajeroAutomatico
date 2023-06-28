@@ -50,7 +50,7 @@ const  renderMenu = ()=>{
     <div>
         <h1>Bienvenid@ ${selected[0].nombre}</h1>
         <div>
-            <a class="botMenu" href="#" onclick="consultar()" role="button"> Consultar </a>
+            <a class="botMenu" href="#" onclick= "consultar()" role="button"> Consultar </a>
         </div>
         <div>
             <a class="botMenu" href="#" role="button">Depositar </a>
@@ -59,11 +59,14 @@ const  renderMenu = ()=>{
             <a class="botMenu" href="#" role="button">Retirar </a>
         </div>
         <div>
-            <a class="botMenu" href="#" role="button">Salir </a>
+            <a class="botMenu" href="" onclick= "salir ()" role="button">Salir </a>
         </div>
     </div>
     `
     wrapper.innerHTML= menu
 };
-const action= document.querySelector('#actions')
+const actions = document.querySelector('#actions')
+
+
+
 

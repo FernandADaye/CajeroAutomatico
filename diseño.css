@@ -80,7 +80,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: aliceblue;
     margin-top: 20px;
     width: 100%;
@@ -96,7 +96,6 @@ body{
     transition: none;
     margin-top: 30px;
     text-decoration: none;   
-    padding-bottom:10px;
     flex-direction: row;
     height: 10%;
     width: 30%;
@@ -113,13 +112,13 @@ body{
     justify-content: center;
     align-items: center;
     transition: none;
-    margin-top: 20px;
+    margin-top: 15px;
     text-decoration: none;   
     flex-direction: row;
     height: 10%;
     width: 100%;
     font-family: 'Nunito', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     flex-direction: row;
     background-color: rgb(43, 43, 43);
     color:aliceblue
