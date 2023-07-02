@@ -13,16 +13,4 @@ if (saldoSumante>1000){
     <h2 class="fuente">Su saldo es de : ${saldoFinal}  </h2>
 `
 actions.innerHTML = botDepositar;
-
 };
-
-
-    
-/*
-var depositar = document.querySelector('form')
-formulario.addEventListener('submit', (event)=> {
-    event.preventDefault()
-    let user_id = event.target["cuenta"].value;
-    let pin = prompt ("Ingrese su pin");
-    validatePIN(user_id, pin);
-})*/

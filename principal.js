@@ -58,7 +58,7 @@ const  renderMenu = ()=>{
             <a class="botMenu" href="#" onclick= "depositar()" role="button">Depositar </a>
         </div>
         <div>
-            <a class="botMenu" href="#" role="button">Retirar </a>
+            <a class="botMenu" href="#" onclick= "retirar()" role="button">Retirar </a>
         </div>
         <div>
             <a class="botMenu" href="" onclick= "salir ()" role="button">Salir </a>
@@ -68,7 +68,6 @@ const  renderMenu = ()=>{
     wrapper.innerHTML= menu
 };
 const actions = document.querySelector('#actions')
-
 
 
 
