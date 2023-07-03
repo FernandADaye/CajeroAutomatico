@@ -6,7 +6,7 @@ if (saldoSumante>1000){
     alert('Límite de deposito $1,000 pesos')
 }else{
     var saldoFinal= Number(saldoSumante) + (selected[0].saldo);
-    cuentasDePersonas[0].saldo = saldoFinal;
+    selected[0].saldo = saldoFinal;
 }
     var botDepositar =
     `
